@@ -14,11 +14,6 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        externalNativeBuild {
-            cmake {
-                cppFlags += "-std=c++17"
-            }
-        }
     }
 
     buildTypes {
@@ -40,14 +35,6 @@ android {
         viewBinding = true
     }
 
-    // Optional native C++/JNI path for high-speed OpenCV operations,
-    // per the spec's "C++ / JNI (Optional)" dependency note.
-    externalNativeBuild {
-        cmake {
-            path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
-        }
-    }
 }
 
 dependencies {
