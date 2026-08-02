@@ -64,7 +64,7 @@ dependencies {
     // your project uses one -- OpenCV's official distribution is a
     // downloadable SDK, not always a single Maven coordinate, so the exact
     // line here depends on which distribution method the project adopts.
-    implementation(project(":opencv"))
+    implementation("org.opencv:opencv:4.10.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -81,5 +81,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     // Instrumented tests need OpenCV loaded on-device -- see TESTING.md.
-    androidTestImplementation(project(":opencv"))
+    androidTestImplementation("org.opencv:opencv:4.10.0")
 }
