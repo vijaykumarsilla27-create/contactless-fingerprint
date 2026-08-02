@@ -16,7 +16,7 @@
     <!--
         ROI target-box overlay: a simple bordered View positioned where the
         user should hold their fingertip. Its bounds here are a starting
-        layout guide only -- MainActivity.roiProvider currently hardcodes a
+        layout guide only - MainActivity.roiProvider currently hardcodes a
         matching pixel Rect for the OpenCV-side crop; a production version
         should compute the OpenCV ROI from this view's actual measured
         bounds (via getLocationOnScreen / a custom overlay View) so the
